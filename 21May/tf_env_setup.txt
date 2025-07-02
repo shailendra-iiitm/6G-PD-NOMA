@@ -1,0 +1,55 @@
+ Create a Virtual Environment with Python 3.10
+Now use the exact path of python 3.10 to create your virtual environment:
+
+bash
+Copy
+Edit
+"C:\Users\shail\AppData\Local\Programs\Python\Python310\python.exe" -m venv tf310_env
+Then activate:
+
+bash
+Copy
+Edit
+tf310_env\Scripts\activate
+Now you’ll see:
+
+bash
+Copy
+Edit
+(tf310_env) C:\Users\shail\Desktop\GG-PD-NOMA\21May>
+🔹 3. Verify You’re on Python 3.10
+Run:
+
+bash
+Copy
+Edit
+python --version
+It should show:
+
+nginx
+Copy
+Edit
+Python 3.10.11
+🔹 4. Install Requirements
+Now install dependencies:
+
+bash
+Copy
+Edit
+pip install --upgrade pip
+pip install -r requirements.txt
+✅ TensorFlow will now install without errors.
+
+🔹 5. Run Your Script
+bash
+Copy
+Edit
+python hybrid_dl_pairing.py
+❗ Quick Fix if You Still See Python 3.13
+In VS Code terminal, click the Python version shown in bottom left corner, and:
+
+Select interpreter → Browse → Choose:
+
+Copy
+Edit
+tf310_env\Scripts\python.exe
